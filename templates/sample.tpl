@@ -23,6 +23,20 @@ Hello, {$name}!
 {else}
   <p>検索サイトは指定されていません</p>
 {/if}
+<br>
+
+{foreach from=$personaldata item=var key=keyname name=loopname}
+<p>キー:{$keyname}</p>
+<p>要素:{$var}</p>
+<p>({$smarty.foreach.loopname.iteration}) {$var}</p>
+<p>[{$smarty.foreach.loopname.index}]{$var}</p>
+{/foreach}
+
+{foreach from=$personaldata item=var name=loopname}
+<p>要素:{$var}</p>
+{foreachelse}
+<p>値がありません</p>
+{/foreach}
 
 </body>
 </html>
