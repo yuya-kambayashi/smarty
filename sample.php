@@ -6,7 +6,7 @@ $smarty = new Smarty();
 $smarty->template_dir = dirname( __FILE__).'/templates';
 $smarty->compile_dir = dirname( __FILE__).'/templates_c';
 
-$smarty->assign( 'name', 'ワールド');
+$smarty->assign( 'name', 'Tarou');
 $smarty->display('sample.tpl');
 
 ?>
