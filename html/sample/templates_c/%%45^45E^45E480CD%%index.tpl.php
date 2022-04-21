@@ -1,7 +1,7 @@
-<?php /* Smarty version 2.6.31, created on 2022-04-21 07:29:16
-         compiled from sample.tpl */ ?>
+<?php /* Smarty version 2.6.31, created on 2022-04-21 09:43:05
+         compiled from index.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
-smarty_core_load_plugins(array('plugins' => array(array('modifier', 'date_format', 'sample.tpl', 8, false),array('modifier', 'upper', 'sample.tpl', 10, false),array('modifier', 'lower', 'sample.tpl', 12, false),array('modifier', 'capitalize', 'sample.tpl', 14, false),)), $this); ?>
+smarty_core_load_plugins(array('plugins' => array(array('modifier', 'date_format', 'index.tpl', 8, false),array('modifier', 'upper', 'index.tpl', 10, false),array('modifier', 'lower', 'index.tpl', 12, false),array('modifier', 'capitalize', 'index.tpl', 14, false),)), $this); ?>
 <html>
 <head>
 <title>Smartyのテスト</title>
@@ -18,7 +18,7 @@ Hello, <?php echo $this->_tpl_vars['name']; ?>
  です。
 <br>
 名前は <?php echo ((is_array($_tmp=$this->_tpl_vars['name'])) ? $this->_run_mod_handler('lower', true, $_tmp) : smarty_modifier_lower($_tmp)); ?>
- です。ああ
+ です。
 <br>
 住所は <?php echo ((is_array($_tmp=$this->_tpl_vars['address'])) ? $this->_run_mod_handler('capitalize', true, $_tmp, true) : smarty_modifier_capitalize($_tmp, true)); ?>
  です。
@@ -65,4 +65,4 @@ if ($this->_foreach['loopname']['total'] > 0):
 <?php endif; unset($_from); ?>
 
 </body>
-</html>
+</html>

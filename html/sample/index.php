@@ -1,10 +1,11 @@
 <?php
-require( dirname( __FILE__).'/libs/Smarty.class.php');
 
+require("C:/xampp/htdocs/smarty/libs/Smarty.class.php");
 $smarty = new Smarty();
-
-$smarty->template_dir = dirname( __FILE__).'/templates';
-$smarty->compile_dir = dirname( __FILE__).'/templates_c';
+$smarty->template_dir = "./templates";
+$smarty->compile_dir = "./templates_c";
+$smarty->cache_dir = "./cache";
+$smarty->config_dir = "./configs";
 
 $smarty->assign( 'name', 'Tarou');
 $smarty->assign( 'address', 'created by SMARTY and php5 oracle11');
@@ -21,6 +22,6 @@ $smarty->assign('personaldata', $data);
 $smarty->assign('title', '繰り返し処理のテスト');
 
 
-$smarty->display('sample.tpl');
+$smarty->display('index.tpl');
 
 ?>
